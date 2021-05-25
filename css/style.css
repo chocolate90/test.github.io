@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Merriweather", serif;
+  width: 100%;
+  min-width: 320px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+li,
+dl,
+ol {
+  margin: 0;
+  list-style: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 100px;
+  letter-spacing: 30px;
+  background-color: #fff;
+  margin: 0;
+}
+
+header > .join > li > a {
+  color: black;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  header .join {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    overflow: hidden;
+  }
+
+  header .join li {
+    margin: 10px 20px;
+  }
+
+  header .join .left {
+    float: left;
+  }
+
+  header .join .right {
+    float: right;
+  }
+
+  header .nav {
+    height: 45px;
+    background-color: #444;
+    text-align: center;
+  }
+
+  header .nav .navbar-list li {
+    display: inline-block;
+  }
+
+  header > .nav > .navbar-list > li > a {
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    padding: 0 20px;
+    margin: 0 10px;
+    font-weight: 550;
+    text-decoration: none;
+  }
+
+  .main-img {
+    margin-top: 155px;
+    margin-bottom: 60px;
+  }
+}
+
+.main-img {
+  position: relative;
+}
+
+.main-img .main-text {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  text-align: center;
+}
+
+.main-img .main-text h2 {
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  color: white;
+}
+
+.main-img .main-text p {
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  color: white;
+}
+
+.prod-wrap .prod-img img {
+  width: 100%;
+}
+
+.prod-wrap .prod-content .title p {
+  text-align: center;
+  margin: 0;
+}
+
+.prod-wrap .prod-content .prod-info {
+  overflow: hidden;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 45px;
+}
+
+.prod-wrap .prod-content .prod-info ul li {
+  float: left;
+}
+
+.prod-wrap .prod-content .prod-info p {
+  float: right;
+  margin: 0;
+}
+
+.prod-wrap .prod-content .prod-price {
+  text-align: center;
+}
+
+.prod-wrap {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.prod-wrap .prod-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+}
+
+.prod-wrap .prod-hover a {
+  display: block;
+  color: white;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 30px;
+  text-decoration: none;
+}
+
+.prod-wrap:hover > .prod-hover {
+  opacity: 1;
+}
+
+.prod-side {
+  position: fixed;
+  top: 500px;
+  right: 0;
+  width: 100px;
+  z-index: 30;
+}
+
+.prod-side .side-list li {
+  background-color: black;
+  text-align: center;
+}
+
+.prod-side .side-list li a {
+  display: block;
+  color: white;
+  padding: 15px 0;
+  border: 1px solid #4d4d4d;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: -1px;
+}
+
+.prod-side .side-list li a h4 {
+  margin: 0;
+}
+
+.prod-side .side-list li a p {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  header h1 {
+    text-align: center;
+    font-size: 50px;
+    padding-left: 40px;
+  }
+
+  header .join {
+    overflow: hidden;
+  }
+
+  header .join li {
+    width: 50%;
+    padding: 10px;
+    background-color: black;
+    text-align: center;
+  }
+
+  header .join li a {
+    color: white;
+  }
+
+  header .join .left {
+    float: left;
+  }
+
+  header .join .right {
+    float: right;
+  }
+
+  header .nav {
+    height: 40px;
+    background-color: #444;
+    text-align: center;
+  }
+
+  header .nav .navbar-list {
+    height: 40px;
+    line-height: 40px;
+  }
+
+  header .nav .navbar-list li {
+    display: inline-block;
+  }
+
+  header .nav .navbar-list li a {
+    display: block;
+    color: white;
+    padding: 0 10px;
+    text-decoration: none;
+  }
+
+  .main-img {
+    margin-top: 135px;
+  }
+
+  .main-img .main-text h2 {
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10;
+    color: white;
+    margin-top: 0;
+  }
+
+  .main-img .main-text p {
+    font-size: 8px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    color: white;
+  }
+
+  .main-img .main-text {
+    top: 5px;
+  }
+
+  .container {
+    margin-top: 30px;
+  }
+
+  .prod-wrap .prod-img img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1355px) {
+  .prod-side {
+    display: none;
+  }
+}
